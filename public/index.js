@@ -3,7 +3,7 @@ $(document).ready(function(){
 	let selected = [];
 
 	$("#number_start").val(1);
-	$("#number_length").val(3);
+	$("#number_length").val(4);
 
 	$("input").on('input',function(){
 		update_answer();
@@ -81,7 +81,7 @@ $(document).ready(function(){
 
     		let ans = $("#show_answer").is(':checked')? String.fromCharCode(65 + answer.indexOf(word)) : '_';
 
-            $('#' + id).text('_(' + (i+add) + ')' + '_' + ans + under + end + ' ');
+            $('#' + id).text('(' + (i+add) + ')' + '_' + ans + under + end + ' ');
         }
 
     	$("#answer").empty();
